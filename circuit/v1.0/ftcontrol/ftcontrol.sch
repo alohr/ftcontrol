@@ -7652,6 +7652,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/4W" value="1K"/>
 <part name="LED3" library="adafruit" deviceset="LED" device="3MM"/>
 <part name="IR1" library="ubiyubix" deviceset="IR_TSOP4838" device=""/>
+<part name="LED4" library="adafruit" deviceset="LED" device="3MM"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/4W" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -7714,6 +7716,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R4" gate="G$1" x="116.84" y="88.9" rot="R180"/>
 <instance part="LED3" gate="G$1" x="106.68" y="88.9" rot="R90"/>
 <instance part="IR1" gate="G$1" x="109.22" y="66.04"/>
+<instance part="LED4" gate="G$1" x="106.68" y="99.06" rot="R90"/>
+<instance part="R5" gate="G$1" x="116.84" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7880,6 +7884,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="IR1" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="60.96" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<label x="129.54" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8090,6 +8099,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="27.94" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 <label x="33.02" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="104.14" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<label x="99.06" y="101.6" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="PD1" class="0">
 <segment>
@@ -8206,6 +8220,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
